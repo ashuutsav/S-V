@@ -1,12 +1,28 @@
+html,body{
+  height:100%;
+}
+p,h2,h3{
+  font-family: sans-serif;
+}
 #logo{
   width:30%;
 }
-#logoImg{
-  width:60%;
+.menu img{
+  width:80%;
+  transition: width 0.5s ease;
+  }
+
+  .logoNew img{
+    width:60%;
+  }
+
+  .logoNew1 img{
+    width:80%;
   }
 
 .phNum{
-  font-size:120%;font-family:garamond;
+  font-size:120%;
+  font-family: verdana sans-serif;
   color: white;
   margin-right: 1%;
   margin-left: auto;
@@ -17,11 +33,18 @@
 }
 
 .menu{
-  background-color: #110b3f;
+  background-color: transparent;
+ transition: background-color 0.5s ease;
 }
 
+.nav-transparent{
+  background-color: transparent;
+}
 
+.nav-colored{
+  background-color: #110b3f;
 
+}
 
 .bg1{
   background-image: url("../images/office1.jpeg");
@@ -36,18 +59,23 @@
 
 .face h1{
   font-family:alfa slab one;
-  margin-top:6%;
   text-align:center;
-  padding-top:10%;
-  /* padding-bottom:15%; */
+  padding-top: 50%;
   font-weight:bold;
-  font-size:800%;
+  font-size:700%;
   color:white;
+}
+
+.face hr{
+  width:50%;
+  height:10px;
+  background-color:orange;
 }
 
 .face h2{
   color: white;
   text-align: center;
+  padding-top: 15%;
 }
 
 .face button{
@@ -55,58 +83,182 @@
   background-color: orange;
   color: white;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 20%;
 }
 
-.body1 h3{
+.body1,.body2,.body3 h3{
   text-align: center;
   color: #110b3f;
 }
 
-.body2{
-
-}
-
-.body2 h3{
-  background-color: #110b3f;
+.bottom{
   color:white;
-  text-align: center;
+  padding-top:2em;
+  padding-bottom:0;
+  background-color:black;
 }
 
-.body3 h3{
-  background-color: #110b3f;
-  text-align: center;
+.foot1{
+  margin-top: -5%;
+  padding-bottom: 3%;
+}
+
+.foot2{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.contact{
   color: white;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 601px){
-  html,body{height:100%;} /*covers entire visual area*/
-  .face h1{
-    padding-top:50%;
-  }
+.contact:hover{
+  color:white;
+  text-decoration: none;
+}
 
-  .face button{
-    margin-top: 20%;
-  }
+input[type=text], input[type=email], textarea {
+  width:100%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 4%;
+  box-sizing: border-box;
+  margin-top: -2%;
+  margin-bottom: 3%;
+  resize: vertical;
+}
+
+.bodyForm{
+  width:80%;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: orange;
+  color: white;
+  margin-left: 35%;
+  padding: 2% 4%;
+  border: none;
+  border-radius: 4%;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: black;
+}
+
+#list li{
+  display:inline;
+  list-style-type: none;
+  color: #808080;
+  font-size:80%;
+}
+
+#firstList{
+  margin-left: -2%;
+}
+
+#list a{
+  text-decoration: none;
+}
+
+.footer p{
+  color:#808080;
+  font-size:100%;
+  margin-bottom: 1%;
 
 }
+
+
 @media only screen and (min-width: 602px) and (max-width:991px){
+html,body{height:auto;}
+  .menu img{
+    width:40%;
+    transition: width 0.5s ease;
+    }
+
+    .logoNew img{
+      width:30%;
+    }
+
+    .logoNew1 img{
+      width:40%;
+    }
+
   .face h1{
-    padding-top:10%;
+    padding-top:14%;
+  }
+
+  .face hr{
+    width:20%;
+  }
+
+  .face h2{
+    padding-top: 2%;
   }
 
   .face button{
     margin-top: 3%;
+  }
+
+  #firstList{
+    margin-left: 30%;
+  }
+
+  .bodyForm{
+    width:60%;
+  }
+  .foot1{
+    margin-top: 5%;
+    padding-bottom: 3%;
   }
 }
 
 @media only screen and (min-width: 992px){
   html,body{height:100%;} /*covers entire visual area*/
+
+  .menu img{
+    width:30%;
+    padding-left: 5%;
+    transition: width 0.5s ease;
+    }
+
+    .logoNew img{
+      width:20%;
+
+    }
+
+    .logoNew1 img{
+      width:30%;
+    }
   .face h1{
-    padding-top:10%;
+    padding-top:14%;
+  }
+
+  .face hr{
+    width:15%;
+  }
+
+  .face h2{
+    padding-top: 2%;
   }
 
   .face button{
     margin-top: 3%;
   }
+
+  #firstList{
+    margin-left: 37%;
+  }
+
+.footer p{
+  padding-left: 50%;
+}
+.bodyForm{
+  width:60%;
+}
+.foot1{
+  margin-top:2%;
+}
 }
