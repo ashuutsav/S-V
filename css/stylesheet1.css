@@ -85,7 +85,10 @@ p,h2,h3{
   margin: auto;
   margin-top: 20%;
 }
+.face a:hover{
+  text-decoration: none;
 
+}
 .body1,.body2,.body3 h3{
   text-align: center;
   color: #110b3f;
