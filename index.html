@@ -33,6 +33,8 @@
 
         });
     });
+
+
     </script>
 
   </head>
@@ -53,7 +55,7 @@
 <h1>S & V </h1><hr>
 <br>
 <h2>Want to grow your business?</h2><br>
-<a href="#contactus"><button class="btn btn-lg" href="#contactus" type="button" name="button">Contact Us</button></a> <br><br><br>
+<button class="btn btn-lg" id="button1" type="button" name="button">Contact Us</button><br><br><br>
 
 
       </div>
@@ -108,29 +110,29 @@ Our human assisted digital approaches help you define and build differentiated c
 
 
 
-<div class="container-fluid bottom" id="contactus" >
+<div class="container-fluid bottom">
   <div class="row">
-    <div class="col-sm-12 col-lg-6 col-md-6">
-      <div class="container-fluid bodyForm">
-        <h5 class="text-center">Quick Enquiry</h5><br>
-      <form action="mailto:ashu.utsav04@gmail.com?Subject=Enquiry%20details" method="post" enctype="text/plain">
+    <div class="col-sm-12 col-lg-6 col-md-12">
+      <div class="container-fluid bodyFooter">
+        <!-- <h5 class="text-center">Quick Enquiry</h5><br>
+      <form action="/sendemail" method="post" enctype="text/plain">
         <label style="text-align:left" for="fname">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required><br>
 
         <label for="lname">Email</label>
         <input type="email" id="email" name="email" placeholder="Your email address" required>
 
-      <label for="subject">Requirements</label>
-        <textarea id="subject" name="requirements" placeholder="Your requirements" required style="height:200px;"></textarea>
+      <label for="subject">Your Message</label>
+        <textarea id="text" name="text" placeholder="Your message" required style="height:200px;"></textarea>
         <br><br>
         <input type="submit" name="submit" value="Send">
-      </form>
-
+      </form> -->
+<img src="images/callCentre.jpg" style="" alt="Call Centre">
     </div>
 
         <br><br>
     </div>
-    <div class="col-sm-12 col-lg-6 col-md-6 text-center">
+    <div class="col-sm-12 col-lg-6 col-md-12 text-center" id="contactus" >
       <div class="foot1">
         <i class="fa fa-map-marker" aria-hidden="true"></i><p> <strong>India : </strong>Gracia, 402, 4th floor,<br>Thite Nagar, Oppo HP Petrol Pump,Haradi,<br>Pune,Maharashtra- 411014 </p>
         <i class='fas fa-phone fa-flip-horizontal' aria-hidden="true"></i><a class="contact" href="tel:+917507978619">+91 7507978619</a>
@@ -168,6 +170,14 @@ Our human assisted digital approaches help you define and build differentiated c
 
 
 </div>
+
+<script type="text/javascript">
+$("#button1").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#contactus").offset().top
+  }, 2000);
+});
+</script>
 
   </body>
 </html>

@@ -121,34 +121,16 @@ p,h2,h3{
   text-decoration: none;
 }
 
-input[type=text], input[type=email], textarea {
-  width:100%;
-  padding: 2%;
-  border: 1px solid #ccc;
-  border-radius: 4%;
-  box-sizing: border-box;
-  margin-top: -2%;
-  margin-bottom: 3%;
-  resize: vertical;
-}
 
-.bodyForm{
+.bodyFooter{
   width:80%;
+  text-align: center;
 }
 
-input[type=submit] {
-  width: 30%;
-  background-color: orange;
-  color: white;
-  margin-left: 35%;
-  padding: 2% 4%;
-  border: none;
-  border-radius: 4%;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  color: black;
+.bodyFooter img{
+  width:80%;
+  margin-left:0;
+  margin-top:10%;
 }
 
 #list li{
@@ -159,7 +141,7 @@ input[type=submit]:hover {
 }
 
 #firstList{
-  margin-left: -10%;
+  margin-left: -5%;
 }
 
 #list a{
@@ -209,9 +191,6 @@ html,body{height:auto;}
     margin-left: 30%;
   }
 
-  .bodyForm{
-    width:60%;
-  }
   .foot1{
     margin-top: 5%;
     padding-bottom: 3%;
@@ -258,9 +237,16 @@ html,body{height:auto;}
 .footer p{
   padding-left: 50%;
 }
-.bodyForm{
+.bodyFooter{
   width:60%;
 }
+
+.bodyFooter img{
+  width:auto;
+  margin-left:-30%;
+  margin-top:15%;
+}
+
 .foot1{
   margin-top:2%;
 }
